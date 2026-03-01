@@ -13,6 +13,7 @@
     }
 
     body {
+      position: relative;
       background: url('images/Loadingscreen_twisty_race_1024x500.png') no-repeat center center/cover;
       display: flex;
       flex-direction: column;
@@ -40,11 +41,13 @@
     }
 
     .video-wrapper {
-      margin-bottom: 24px;
+      position: absolute;
+      top: 32px;
+      right: 32px;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-      width: min(560px, 90vw);
+      width: min(480px, 45vw);
       aspect-ratio: 16 / 9;
     }
 
