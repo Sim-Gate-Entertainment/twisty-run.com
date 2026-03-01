@@ -38,9 +38,34 @@
     .store-btns a img:hover {
       transform: scale(1.05);
     }
+
+    .video-wrapper {
+      margin-bottom: 24px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+      width: min(560px, 90vw);
+      aspect-ratio: 16 / 9;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
   </style>
 </head>
 <body>
+
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/lVteaW3lSBA"
+      title="Twisty Race : Rider Cat — Gameplay Trailer"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
 
   <div class="store-btns">
     <a href="https://play.google.com/store/apps/details?id=com.TumbaGames.TwistyRun" target="_blank" rel="noopener">
