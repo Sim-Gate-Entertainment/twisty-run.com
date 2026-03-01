@@ -20,26 +20,36 @@
       align-items: center;
     }
 
-    .google-play-btn {
-      margin-bottom: 40px; /* spacing from bottom */
+    .store-btns {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .google-play-btn img {
+    .store-btns a img {
       width: 200px;
       height: auto;
       transition: transform 0.2s ease;
     }
 
-    .google-play-btn img:hover {
+    .store-btns a img:hover {
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 
-  <a class="google-play-btn" href="https://play.google.com/store/apps/details?id=com.TumbaGames.TwistyRun" target="_blank" rel="noopener">
-    <img src="images/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
-  </a>
+  <div class="store-btns">
+    <a href="https://play.google.com/store/apps/details?id=com.TumbaGames.TwistyRun" target="_blank" rel="noopener">
+      <img src="images/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+    </a>
+    <a href="https://apps.apple.com/pl/app/twisty-race/id6758782634" target="_blank" rel="noopener">
+      <img src="images/App_Store_Badge_EN.svg" alt="Download on the App Store">
+    </a>
+  </div>
 
 </body>
 </html>
